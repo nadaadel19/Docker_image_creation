@@ -11,5 +11,5 @@ app.get('/', (req, res) => { // route for display hello world
 });
 
 app.listen(PORT, HOST, () => {
-  console.log('Application started successfully.');
+  console.log('Application started successfully !!');
 });
