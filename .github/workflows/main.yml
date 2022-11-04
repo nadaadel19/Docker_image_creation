@@ -1,1 +1,18 @@
+on:
+  /*what is the branch*/
+  push:
+    branches:
+      - master
 
+
+
+jobs:
+  build:
+   /*machine type*/
+    run-on: ubuntu-latest 
+    /*array*/
+    steps:
+      - name: "testing github actions"
+        run: pwd
+      - name: "testing printing"
+        run: echo ahmed
