@@ -9,9 +9,8 @@ jobs:
   build:
     runs-on: ubuntu-latest 
     steps:
-      - name: "before printing the folder containts"
-        run: ls
-
       - uses: actions/checkout@v3
-      - name: "after printing the folder containts"
-        run: ls
+
+      - name: " login to dockerhub"
+        run: docker login --username ali11 --password dckr_pat_53484obn9zPM_cmRsBftedTlw5w
+        
