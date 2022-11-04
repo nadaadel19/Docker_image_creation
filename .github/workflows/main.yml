@@ -9,5 +9,9 @@ jobs:
   build:
     runs-on: ubuntu-latest 
     steps:
-      - name: "printing the folder containts"
+      - name: "before printing the folder containts"
+        run: ls
+
+      - uses: actions/checkout@v3
+      - name: "after printing the folder containts"
         run: ls
