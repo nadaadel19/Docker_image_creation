@@ -1,5 +1,5 @@
 on:
-
+  /*what is the branch*/
   push:
     branches:
       - master
@@ -8,9 +8,9 @@ on:
 
 jobs:
   build:
-   
-    run-on: ubuntu-latest 
-  
+   /*machine type*/
+    runs-on: ubuntu-latest 
+    /*array*/
     steps:
       - name: "testing github actions"
         run: pwd
